@@ -30,7 +30,5 @@ def hello():
         return redirect(url_for('index'))
 
 
-# git remote add azure https://hello-flask5.scm.azurewebsites.net:443/hello-flask5.git
-
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=8000)
